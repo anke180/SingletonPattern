@@ -19,11 +19,11 @@ namespace Singleton
         private static readonly object _balanceLock = new();
         private static ChocolateBoiler uniqueInstance;
 
-        //private ChocolateBoiler()
-        //{
-        //    empty = true;
-        //    boiled = false;
-        //}
+        private ChocolateBoiler()
+        {
+            empty = true;
+            boiled = false;
+        }
 
 
         public static ChocolateBoiler GetInstance()
